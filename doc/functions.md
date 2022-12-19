@@ -112,10 +112,9 @@ function withPromiseReturn(a, b) {
  * @param {number} b Second Value
  * @returns {Promise<Number>} Resolves with a sum of arguments
  */
- async function withAsyncReturn(a, b) {
-    return new Promise((resolve) => {
-        resolve(a + b)
-    })
+async function withAsyncReturn(a, b) {
+    const result = await withPromiseReturn(a, b)
+    return result
 }
 ```
 
