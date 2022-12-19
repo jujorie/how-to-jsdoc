@@ -112,3 +112,7 @@ const list = new List(["aa"])
 list.push('bb')
 const item = list.item(1)
 ```
+
+[Back](#content)
+
+---
