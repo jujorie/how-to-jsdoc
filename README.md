@@ -10,5 +10,7 @@ Samples for jsdoc
     - [Example](./lib/variables.js)
 * [Functions](./doc/functions.md)
     - [Example](./lib/functions.js)
+* [Callbacks](./doc/callbacks.md)
+    - [Example](./lib/callbacks.js)
 * [Classes](./doc/classes.md)
     - [Example](./lib/classes.js)
