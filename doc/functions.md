@@ -208,7 +208,7 @@ function returnObjectDocAsTypedef() {
 /**
  * Using value
  *
- * @param {"a" | "b" | "c" } [enumValue] 
+ * @param { "a" | "b" | "c" } [enumValue] 
  * @returns {string}
  */
 function usingSimpleEnum(enumValue) {
@@ -225,7 +225,7 @@ usingSimpleEnum("a")
 ```javascript
 /**
  * Enum values for sample
- * @typedef {"a" | "b" | "c"} EnumValues 
+ * @typedef { "a" | "b" | "c" } EnumValues 
  */
 
 /**
@@ -239,6 +239,27 @@ function usingSimpleEnumTypeDef(enumValue) {
 // Sample call
 
 usingSimpleEnumTypeDef("a")
+```
+
+### Using Typedef enum as integer
+
+```javascript
+
+/**
+ * Using values as integer 
+ * 
+ * @param { "1" | "2" | "3" | "-1" | "-2" } [valueAsString = "1"] Value of enum as string
+ * @returns 
+ */
+function usingSimpleIntegerEnum(valueAsString) {
+    const value = parseInt(valueAsString)
+    return value
+}
+
+// Sample call
+
+usingSimpleIntegerEnum("1")
+
 ```
 
 [Back](#content)
